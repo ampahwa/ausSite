@@ -1,8 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import utilStyles from '../styles/utils.module.css';
 import NavBar from '../components/navbar';
+
+import { ProSidebarProvider } from 'react-pro-sidebar';
+
+//Page Imports
+import Homepage from '../components/homepage';
 
 export default function Home() {
   return (
@@ -13,18 +17,10 @@ export default function Home() {
       </Head>
 
       <main>
-      <NavBar />
-      <section id="home" className={utilStyles.home}>
-        <Image
-          src="/../public/AusProfile.jpg" // Route of the image file
-          height={200} // Desired size with correct aspect ratio
-          width={200} // Desired size with correct aspect 
-          className={utilStyles.borderCircle}
-          alt="Austin Barron"
-        />
-        <h1 className={styles.title}> Austin Barron </h1>
-        <h5> A lad to remember! </h5>
-      </section>
+      <ProSidebarProvider>
+        <NavBar />
+      </ProSidebarProvider>
+      <Homepage />
 
       <section id="writings" className={utilStyles.writing}>WRITINGS</section>
       <section id="films" className={utilStyles.film}>FILMS</section>
@@ -54,16 +50,6 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
         }
         code {
           background: #fafafa;

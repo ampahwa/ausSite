@@ -3,8 +3,8 @@
   }
   
   .home {
-    display: grid;
-    place-items: center;
+    display: inline-block;
+    place-items: right;
     height: 50vh;
     font-size: 32px;
     font-weight: bold;

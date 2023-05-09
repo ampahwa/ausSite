@@ -40,14 +40,16 @@ class NavBar extends Component {
             </header>
             <style jsx>{`
               ul {
-                display: flex;
+                display:block
                 gap: 1rem;
-                font-size: 0.9rem;
                 list-style: none;
-                padding: 0;
+                font-size: 24px;
+                padding: 8px
               }
 
               li {
+                margin-left: 15px;
+                font-size: 40px;
                 cursor: pointer;
               }
 
