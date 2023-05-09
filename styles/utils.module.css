@@ -1,0 +1,43 @@
+  .borderCircle {
+    border-radius: 9999px;
+  }
+  
+  .home {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .writing {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .film {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .misc {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .contact {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 32px;
+    font-weight: bold;
+  }
